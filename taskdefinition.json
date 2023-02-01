@@ -1,0 +1,19 @@
+{
+    "containerDefinitions": [
+        {
+            "name": "demotask",
+            "image": "610818512696.dkr.ecr.us-east-1.amazonaws.com/fastapi:latest",
+            "portMappings": [ 
+            { 
+               "containerPort": 8000,
+               "hostPort": 8000,
+               "protocol": "tcp"
+            }
+            ],
+            "cpu": 10,
+            "memory": 10,
+            "essential": true
+        }
+    ],
+    "family": "demotask"
+}
